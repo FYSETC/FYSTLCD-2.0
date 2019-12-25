@@ -22,7 +22,7 @@ On the F6, there are two interfaces that can be connected to the touch screen. B
 
 note：If you want to connect via J1, please note that the TX and RX of the serial port need to be crossed.
 
-![1547107811426](images/1547107811426.png)
+![1547107811426](IMAGES/1547107811426.png)
 
 The screen does not have an SD card socket for printing, so we have gave an SD card module for free.
 
