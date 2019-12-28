@@ -1,12 +1,12 @@
 # Very important
 
-At the moment this firmware only works with F6 board , please use the firmware below:
+At the moment this firmware only works with F6/6 board , please use the firmware below:
 
 F6 V1.3 : https://github.com/FYSETC/Marlin-2.0.x-FYSETC/tree/F6/V13
 
 F6 V1.4 : https://github.com/FYSETC/Marlin-2.0.x-FYSETC/tree/F6/V14
 
-
+S6 : https://github.com/FYSETC/Marlin-2.0.x-FYSETC/tree/S6/MASTER
 
 # Step by step setup the touch screen on F6
 
