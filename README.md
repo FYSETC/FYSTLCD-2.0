@@ -8,6 +8,12 @@ F6 V1.4 : https://github.com/FYSETC/Marlin-2.0.x-FYSETC/tree/F6/V14
 
 S6 : https://github.com/FYSETC/Marlin-2.0.x-FYSETC/tree/S6/MASTER
 
+
+
+And you can use the software bellow to design your own UI that base on our UI.
+
+UI design software : https://github.com/FYSETC/FYSTLCD-DGUS
+
 # Step by step setup the touch screen on F6
 
 
