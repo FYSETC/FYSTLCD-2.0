@@ -1,14 +1,10 @@
 # Very important
 
-At the moment this firmware only works with F6/6 board , please use the firmware below:
+At the moment this firmware only works with F6/S6 board , please use the board firmware below:
 
-F6 V1.3 : https://github.com/FYSETC/Marlin-2.0.x-FYSETC/tree/F6/V13
-
-F6 V1.4 : https://github.com/FYSETC/Marlin-2.0.x-FYSETC/tree/F6/V14
+F6 : https://github.com/FYSETC/Marlin-2.0.x-FYSETC/tree/F6/2.0.x
 
 S6 : https://github.com/FYSETC/Marlin-2.0.x-FYSETC/tree/S6/MASTER
-
-
 
 And you can use the software bellow to design your own UI that base on our UI.
 
@@ -45,25 +41,35 @@ The screen does not have an SD card socket for printing, so we have gave an SD c
 
 ![SD-connection](IMAGES/SD-connection.png)
 
-## 2.Software setup 
+## 2.Marlin firmware setup 
 
-In order to use this serial screen, you need to configure marlin and add some codes.
+In order to use this serial screen, you need to configure marlin.
 
-We have uploaded the configured marlin source code to github: https://github.com/FYSETC/Marlin-F6
+### F6:
 
-(If you just want to test the screen, you can download the .hex file directly and uploade it to F6 with xloader. https://github.com/FYSETC/Marlin-F6/blob/master/Marlin/Marlin.F6.TFT.hex)
+F6 : https://github.com/FYSETC/Marlin-2.0.x-FYSETC/tree/F6/2.0.x
 
-The screen of the shipment we have burned the firmware, if you want to make some changes, here is the screen firmware : https://github.com/FYSETC/FYSTLCD.
+According to the board version , you need to change MOTHERBOARD define :
 
-1.uploade the firmware to F6
+#define MOTHERBOARD BOARD_FYSETC_F6_13
 
-2.connect the touch screen to F6 by the FPC cable
+#define MOTHERBOARD BOARD_FYSETC_F6_14
 
-3.connect the SD module to F6 by the gray cable
+Enable screen UI type: (It means remove "//" at the front of the following line)
 
-4.power up the F6 with 12V or 24V power supply ,(You can't just use the USB to power the board, if you do
+#define DGUS_LCD_UI_FYSETC 
 
- that, the screen will be powerless and display white screen.) 
+Use arduino to compile Marlin for F6, follow our wiki https://wiki.fysetc.com/F6_V1.3/
+
+### S6:
+
+S6 : https://github.com/FYSETC/Marlin-2.0.x-FYSETC/tree/S6/MASTER
+
+Enable screen UI type: (It means remove "//" at the front of the following line)
+
+#define DGUS_LCD_UI_FYSETC 
+
+For S6 , you need to use platformio to compile the firmware
 
 ## 3.Uploade screen firmware to screen
 
