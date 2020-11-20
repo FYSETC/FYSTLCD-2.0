@@ -55,6 +55,8 @@ In order to use this serial screen, you need to configure marlin.
 
 F6 : https://github.com/FYSETC/Marlin-2.0.x-FYSETC/tree/F6/2.0.x
 
+#define SDSUPPORT
+
 According to the board version , you need to change MOTHERBOARD define :
 
 #define MOTHERBOARD BOARD_FYSETC_F6_13
@@ -70,6 +72,8 @@ Use arduino to compile Marlin for F6, follow our wiki https://wiki.fysetc.com/F6
 ### S6
 
 S6 : https://github.com/FYSETC/Marlin-2.0.x-FYSETC/tree/S6/MASTER
+
+#define SDSUPPORT
 
 Enable screen UI type: (It means remove "//" at the front of the following line)
 
